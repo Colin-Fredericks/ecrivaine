@@ -39,18 +39,22 @@ I also want to make sure that...
 - The page has a **minimal download footprint**. That minimum might be large, but I want to reduce download burden on those who pay by the megabyte.
 - Anyone can use the site, regardless of disability. The goal is **WCAG 2.1** compatibility.
 
-As a side goal, I'm going to write this in [TypeScript](https://www.typescriptlang.org/) because I haven't used it before and it sounds like a good thing to learn.
+As a side goal, I'm going to write this in [TypeScript](https://www.typescriptlang.org/) because I haven't used it before and it sounds like a good thing to learn. I'm also going to try using npm for package and dependency management because this seems like it could get big easily.
 
 ## Potential Resources
 
 - **Web host**: [GitHub Pages](https://pages.github.com)
+- **Package management**: [npm](https://docs.npmjs.com/cli/v7/using-npm/developers)
+
 - **General framework**: [Bootstrap](https://getbootstrap.com/)
-- **Icons**: I have a FontAwesome 5 license
+  - Might need an accessibility plugin for this.
 - **Rich text editor**: [Summernote](https://summernote.org/)
 - **Raw XHTML editor**:
 - **Raw CSS editor**:
 - **File tree view**: Might end up rolling my own or making it out of Bootstrap / FA pieces.
-- **Book template**: Roll my own
 - **Handle zip files**: [JSZip](https://stuk.github.io/jszip/)
 - **XHTML**:
 - **Cloud storage**:
+
+- **Icons**: I have a [FontAwesome 5](https://fontawesome.com/) license
+- **Book template**: Roll my own
