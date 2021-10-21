@@ -1,0 +1,16 @@
+{
+  "name": "online-ebook-creator",
+  "version": "0.1.0",
+  "description": "Ebook creator using client-side javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "ebook",
+    "client-side"
+  ],
+  "author": "Colin Fredericks",
+  "license": "MIT"
+}
