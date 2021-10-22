@@ -47,7 +47,7 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **Package management**: [npm](https://docs.npmjs.com/cli/v7/using-npm/developers)
 
 - **General framework**: [Bootstrap](https://getbootstrap.com/)
-  - Might need an accessibility plugin for this.
+  - Might need an accessibility plugin for this. [Accessible+](https://www.accessible-template.com/) is an option but an expensive one for me - might be better to just use my own knowledge.
 - **Rich text editor**: [Summernote](https://summernote.org/)
 - **Raw XHTML editor**:
 - **Raw CSS editor**:
