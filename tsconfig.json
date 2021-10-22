@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es8",
+    "module": "commonjs",
+    "strict": true,
+    "outDir": "scripts",
+    "sourceMap": true
+  }
+}
