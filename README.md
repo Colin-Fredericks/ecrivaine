@@ -49,12 +49,14 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **General framework**: [Bootstrap](https://getbootstrap.com/)
   - Might need an accessibility plugin for this. [Accessible+](https://www.accessible-template.com/) is an option but an expensive one for me - might be better to just use my own knowledge.
 - **Rich text editor**: [Summernote](https://summernote.org/)
-- **Raw XHTML editor**:
-- **Raw CSS editor**:
+- **Raw XHTML editor**: Maybe just let it get edited as HTML and then convert to XHTML and back.
+- **Raw CSS editor**: Check the list at [Code Awesome](https://codeawesome.io/javascript/editors)
 - **File tree view**: Might end up rolling my own or making it out of Bootstrap / FA pieces.
 - **Handle zip files**: [JSZip](https://stuk.github.io/jszip/)
-- **XHTML**:
+- **XHTML**: [XMLSerializer](https://stackoverflow.com/a/12092919/1330737)
 - **Cloud storage**:
+  - [dropbox.js](https://github.com/dropbox/dropbox-sdk-js)
+  - [Google Drive API](https://developers.google.com/drive/api/v3/reference)
 
 - **Icons**: I have a [FontAwesome 5](https://fontawesome.com/) license
 - **Book template**: Roll my own
