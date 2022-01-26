@@ -60,3 +60,5 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 
 - **Icons**: I have a [FontAwesome 5](https://fontawesome.com/) license
 - **Book template**: Roll my own
+- **Possible other things:**
+  - [Word Count](https://github.com/RadLikeWhoa/Countable)
