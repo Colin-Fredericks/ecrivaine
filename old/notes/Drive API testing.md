@@ -1,5 +1,12 @@
 Google Drive API testing
 
+Finally found the right way to access the Docs API from client-side:
+
+* https://medium.com/swlh/oauth-2-0-accessing-google-apis-from-your-client-side-js-application-cde47010c659
+* https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
+
+
+
 https://developers.google.com/drive/api/v3/about-sdk?hl=en#what_can_you_do_with_google_drive_api
 (has many links to examples)
 
