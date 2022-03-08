@@ -1,4 +1,4 @@
-# online-ebook-creator
+# Ecrivaine
 
 ## The Problem
 
@@ -57,6 +57,7 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **Cloud storage**:
   - [dropbox.js](https://github.com/dropbox/dropbox-sdk-js)
   - [Google Drive API](https://developers.google.com/drive/api/v3/reference)
+  - [OAuth for Google Drive](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow) with [workflow breakdown](https://medium.com/swlh/oauth-2-0-accessing-google-apis-from-your-client-side-js-application-cde47010c659)
 
 - **Icons**: I have a [FontAwesome 5](https://fontawesome.com/) license
 - **Book template**: Roll my own
