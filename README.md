@@ -46,13 +46,19 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **Web host**: [GitHub Pages](https://pages.github.com)
 - **Package management**: [npm](https://docs.npmjs.com/cli/v7/using-npm/developers)
 
-- **General framework**: [Bootstrap](https://getbootstrap.com/)
+### Installed
+
+- **General framework**: [Bootstrap](https://getbootstrap.com/) ☑️
   - Might need an accessibility plugin for this. [Accessible+](https://www.accessible-template.com/) is an option but an expensive one for me - might be better to just use my own knowledge.
-- **Rich text editor**: [Summernote](https://summernote.org/)
+- **Rich text editor**: [Summernote](https://summernote.org/) ☑️
+- **Handle zip files**: [JSZip](https://stuk.github.io/jszip/) ☑️
+- Hooo boy that adds a bunch of dependencies.
+
+### Not installed yet
+
 - **Raw XHTML editor**: Maybe just let it get edited as HTML and then convert to XHTML and back.
 - **Raw CSS editor**: Check the list at [Code Awesome](https://codeawesome.io/javascript/editors)
 - **File tree view**: Might end up rolling my own or making it out of Bootstrap / FA pieces.
-- **Handle zip files**: [JSZip](https://stuk.github.io/jszip/)
 - **XHTML**: [XMLSerializer](https://stackoverflow.com/a/12092919/1330737)
 - **Cloud storage**:
   - [dropbox.js](https://github.com/dropbox/dropbox-sdk-js)
