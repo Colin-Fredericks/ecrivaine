@@ -55,6 +55,8 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **Rich text editor**: [Summernote](https://summernote.org/) ☑️
 - **Handle zip files**: [JSZip](https://stuk.github.io/jszip/) ☑️
   - Adds a lot of dependencies
+- **Authorization for Google Drive**: [Google's OAuth2 library](https://www.npmjs.com/package/google-auth-library) ☑️
+  - Sweet buttery Jesus another 139 packages.
 
 ### Not installed yet
 
