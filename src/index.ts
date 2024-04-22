@@ -1,4 +1,5 @@
 import { subtract } from "./app";
+import "./index.css"
 
 function init() {
     const form = document.querySelector("form");
