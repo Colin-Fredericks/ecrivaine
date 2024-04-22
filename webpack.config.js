@@ -28,16 +28,21 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        title: 'our project', // Load a custom template (lodash by default)
-        template: 'src/custom.html' }),
+      title: "our project", // Load a custom template (lodash by default)
+      template: "src/custom.html",
+    }),
     new MiniCssExtractPlugin({
-      filename:"bundle.css"})
+      filename: "bundle.css",
+    }),
   ],
   optimization: {
-    minimizer: [
-      new CssMinimizerPlugin(),
-      new TerserPlugin()
-    ],
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+  },
+  watch: true,
+  watchOptions: {
+    aggregateTimeout: 600,
+    poll: 2000,
+    ignored: "**/node_modules",
   },
   devServer: {
     static: path.join(__dirname, "dist"),
