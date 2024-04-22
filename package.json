@@ -13,7 +13,8 @@
     "jquery": "^3.6.0",
     "jszip": "^3.7.1",
     "popper.js": "^1.16.1",
-    "summernote": "^0.8.20"
+    "summernote": "^0.8.20",
+    "undici-types": "^6.13.0"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
