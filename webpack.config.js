@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -21,6 +22,9 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+    alias: {
+      jquery: "jquery/src/jquery",
+    },
   },
   output: {
     filename: "bundle.js",
@@ -33,6 +37,10 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "bundle.css",
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
     }),
   ],
   optimization: {
