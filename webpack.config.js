@@ -1,9 +1,9 @@
-var webpack = require('webpack');
-const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
+const path = require("path");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -15,8 +15,42 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: "css-loader" },
+          { loader: "postcss-loader" },
+          {
+            loader: "sass-loader",
+            options: {
+              implementation: require("sass"),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "font",
+            },
+          },
+        ],
       },
     ],
   },
@@ -24,6 +58,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
       jquery: "jquery/src/jquery",
+      jQuery: "jquery/src/jquery",
     },
   },
   output: {
@@ -32,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "our project", // Load a custom template (lodash by default)
+      title: "Ecrivaine",
       template: "src/custom.html",
     }),
     new MiniCssExtractPlugin({
@@ -41,6 +76,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
+      CodeMirror: "codemirror",
     }),
   ],
   optimization: {

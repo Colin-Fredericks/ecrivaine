@@ -1,4 +1,8 @@
-export function subtract(firstnumber: number, secondnumber: number): number {
-  $('body').append('<p>jQuery is working!</p>');
-  return firstnumber - secondnumber;
+export function startSummernote(): void {
+  $(".summernote").summernote({
+    height: 150, //set editable area's height,
+    codemirror: {
+      theme: "monokai",
+    },
+  });
 }

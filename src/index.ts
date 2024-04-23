@@ -1,25 +1,20 @@
-import { subtract } from "./app";
-import * as $ from "jquery";
+import { startSummernote } from "./app";
+import './jquery';
 import "./index.css";
 
-function init() {
-  const form = document.querySelector("form");
-  form?.addEventListener("submit", submitHandler);
-}
+import "popper.js";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function submitHandler(e: Event) {
-  e.preventDefault();
-  const num1 = document.querySelector(
-    "input[name='firstnumber']"
-  ) as HTMLInputElement;
-  const num2 = document.querySelector(
-    "input[name='secondnumber']"
-  ) as HTMLInputElement;
-  const result = subtract(Number(num1.value), Number(num2.value));
-  const resultElement = document.querySelector("p");
-  if (resultElement) {
-    resultElement.textContent = result.toString();
-  }
-}
+import "codemirror/lib/codemirror.js";
+import "codemirror/lib/codemirror.css";
+import "codemirror/mode/xml/xml";
+import "codemirror/theme/monokai.css";
 
-init();
+import "summernote/dist/summernote-bs5";
+import "summernote/dist/summernote-bs5.css";
+
+$(function () {
+  console.log("jQuery is ready");
+  startSummernote();
+});
