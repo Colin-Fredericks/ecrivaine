@@ -10,6 +10,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.ts?$/,
         use: "ts-loader",
         exclude: /node_modules/,
@@ -28,37 +36,13 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images",
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(woff|woff2|ttf|otf|eot)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "font",
-            },
-          },
-        ],
-      },
     ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
-      jquery: "jquery/src/jquery",
-      jQuery: "jquery/src/jquery",
+      jquery: path.resolve(__dirname, "node_modules/jquery"),
+      jQuery: path.resolve(__dirname, "node_modules/jquery"),
     },
   },
   output: {

@@ -1,6 +1,6 @@
 export function startSummernote(): void {
   $(".summernote").summernote({
-    height: 150, //set editable area's height,
+    height: 300,
     codemirror: {
       theme: "monokai",
     },

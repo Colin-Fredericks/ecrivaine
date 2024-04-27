@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.24.4",
+    "@popperjs/core": "^2.11.8",
     "@types/bootstrap": "^5.2.10",
     "@types/codemirror": "^5.60.15",
     "@types/summernote": "^0.8.10",
@@ -26,7 +27,9 @@
     "codemirror": "^5.65.16",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
-    "summernote": "^0.8.20"
+    "postcss": "^8.0.1",
+    "summernote": "^0.8.20",
+    "typescript": "^5.4.5"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",

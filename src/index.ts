@@ -1,4 +1,4 @@
-import { startSummernote } from "./app";
+import { startSummernote } from "./editor";
 import './jquery';
 import "./index.css";
 
