@@ -48,6 +48,10 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 - **Web app management**: [webpack](https://webpack.js.org/)
   - Adds a lot of dependencies
 
+### Implementation notes
+
+- Summernote for bootstrap 5 still has issues. You need to use the fix from [https://github.com/huzumsergiu84/summernote-bs-5-fix/blob/main/summernote-bs5.js](https://github.com/huzumsergiu84/summernote-bs-5-fix/blob/main/summernote-bs5.js)
+
 ### Installed
 
 - **General framework**: [Bootstrap](https://getbootstrap.com/) ☑️

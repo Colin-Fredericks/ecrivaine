@@ -11,6 +11,7 @@ import "codemirror/lib/codemirror.css";
 import "codemirror/mode/xml/xml";
 import "codemirror/theme/monokai.css";
 
+// Needs to use fix from https://github.com/huzumsergiu84/summernote-bs-5-fix/blob/main/summernote-bs5.js
 import "summernote/dist/summernote-bs5";
 import "summernote/dist/summernote-bs5.css";
 
