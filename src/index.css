@@ -55,6 +55,15 @@ ol.file-structure li.folder::before {
 }
 
 #file-view{
-  height: 400px;
-  overflow: scroll;
+  height: 450px;
+  overflow-y: scroll;
 }
+
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+/* Include one or the other of this or the above, not both. */
+/* .note-icon-caret::before {
+  content: none !important;
+} */

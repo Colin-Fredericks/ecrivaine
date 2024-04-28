@@ -7,6 +7,16 @@ export function startSummernote(): void {
     codemirror: {
       theme: "monokai",
     },
+    toolbar: [
+      ['style', ['style']],
+      ['font', ['bold', 'italic', 'clear']],
+      ['fontname', ['fontname']],
+      ['color', ['color']],
+      ['para', ['ul', 'ol', 'paragraph']],
+      ['table', ['table']],
+      ['insert', ['link', 'picture']],
+      ['view', ['codeview', 'help']],
+    ],
   });
 
   $("#download").on("click", () => {
