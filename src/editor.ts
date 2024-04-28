@@ -3,13 +3,13 @@ let saveAs = require("file-saver");
 
 export function startSummernote(): void {
   $(".summernote").summernote({
-    height: 300,
+    height: 400,
     codemirror: {
       theme: "monokai",
     },
   });
 
-  $("#save").on("click", () => {
+  $("#download").on("click", () => {
     const content = $(".summernote").summernote("code");
     console.log(content);
     let zip = new JSZip();

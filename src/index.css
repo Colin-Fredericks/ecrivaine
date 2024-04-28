@@ -3,6 +3,7 @@ form {
   margin-top: 100px;
   border-radius: 40px;
 }
+
 .cal {
   width: 550px;
   height: 300px;
@@ -15,7 +16,45 @@ form {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .input {
   border-radius: 10px;
   margin-top: 40px;
+}
+
+h2 {
+  font-size: larger;
+}
+
+ol.file-structure li {
+  list-style-type: none;
+  padding: 0;
+}
+
+ol.file-structure {
+  padding: 0;
+}
+
+ol.file-structure ol {
+  padding-left: 15px;
+}
+
+ol.file-structure li summary::before {
+  content: "📁";
+  margin-right: 5px;
+  display: inline-block;
+}
+
+ol.file-structure li::before {
+  content: "📄";
+  margin-right: 5px;
+}
+
+ol.file-structure li.folder::before {
+  content: none;
+}
+
+#file-view{
+  height: 400px;
+  overflow: scroll;
 }

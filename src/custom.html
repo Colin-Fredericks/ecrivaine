@@ -7,9 +7,72 @@
 
 <body>
   <div class="container">
-    <h1>summernote webpack test</h1>
-    <div class="summernote"></div>
-    <button id="save">Save</button>
+    <h1>Écrivaine</h1>
+    <div class="row">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Load</button>
+        <button type="button" class="btn btn-primary">Save</button>
+        <button id="download" type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+    <div class="editor row">
+      <div id="file-view" class="col-md-3">
+        <div class="row">
+          <h2>Project Name</h2>
+        </div>
+        <div class="row">
+          <div class="col">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Root</a></li>
+                <li class="breadcrumb-item"><a href="#">images</a></li>
+                <li class="breadcrumb-item active" aria-current="page">misc</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ol class="file-structure">
+              <li class="folder">
+                <details>
+                  <summary>Root</summary>
+                  <ol>
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>File 3</li>
+                    <li class="folder">
+                      <details>
+                        <summary>images</summary>
+                        <ol>
+                          <li>File 4</li>
+                          <li>File 5</li>
+                          <li>File 6</li>
+                          <li class="folder">
+                            <details>
+                              <summary>misc</summary>
+                              <ol>
+                                <li>File 7</li>
+                                <li>File 8</li>
+                                <li>File 9</li>
+                              </ol>
+                            </details>
+                          </li>
+                              </ol>
+                      </details>
+                    </li>
+                    <li>File 10</li>
+                  </ol>
+                </details>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="summernote"></div>
+      </div>
+    </div>
   </div>
 </body>
 
