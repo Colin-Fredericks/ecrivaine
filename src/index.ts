@@ -15,6 +15,10 @@ import "codemirror/theme/monokai.css";
 import "summernote/dist/summernote-bs5";
 import "summernote/dist/summernote-bs5.css";
 
+// add jszip for saving files
+import "jszip";
+import "file-saver";
+
 $(function () {
   console.log("jQuery is ready");
   startSummernote();
