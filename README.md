@@ -16,7 +16,7 @@ This project needs...
 
 - A **front-end** with...
   - A **rich text editor**.
-  - A **raw XHTML editor** with maybe some color-coding.
+  - A **raw XHTML editor** with maybe some color-coding. Alternatively, a way to convert HTML into XHTML.
   - A **css editor**, ditto.
   - A **file tree view**. We won't be storing *actual* files, but it should look like the ebook eventually will.
   - A **base template** for new books.
@@ -39,14 +39,13 @@ I also want to make sure that...
 - The page has a **minimal download footprint**. That minimum might be large, but I want to reduce download burden on those who pay by the megabyte.
 - Anyone can use the site, regardless of disability. The goal is **WCAG 2.1** compatibility.
 
-As a side goal, I'm going to write this in [TypeScript](https://www.typescriptlang.org/) because I haven't used it before and it sounds like a good thing to learn. I'm also going to try using npm for package and dependency management because this seems like it could get big easily.
+As a side goal, I'm going to write this in [TypeScript](https://www.typescriptlang.org/)
 
 ## Potential Resources
 
 - **Web host**: [GitHub Pages](https://pages.github.com)
-- **Package management**: [npm](https://docs.npmjs.com/cli/v7/using-npm/developers)☑️
+- **Package management**: [yarn](https://yarnpkg.com)
 - **Web app management**: [webpack](https://webpack.js.org/)
-  - Adds a lot of dependencies
 
 ### Implementation notes
 
@@ -54,16 +53,16 @@ As a side goal, I'm going to write this in [TypeScript](https://www.typescriptla
 
 ### Installed
 
-- **General framework**: [Bootstrap](https://getbootstrap.com/) ☑️
+- **General framework**: [Bootstrap](https://getbootstrap.com/)
   - Might need an accessibility plugin for this. [Accessible+](https://www.accessible-template.com/) is an option but an expensive one for me - might be better to just use my own knowledge.
-- **Rich text editor**: [Summernote](https://summernote.org/) ☑️
-- **Handle zip files**: [JSZip](https://stuk.github.io/jszip/) ☑️
+- **Rich text editor**: [Summernote](https://summernote.org/)
+- **Handle zip files**: [JSZip](https://stuk.github.io/jszip/)
   - Adds a lot of dependencies
-- **Authorization for Google Drive**: [Google's OAuth2 library](https://www.npmjs.com/package/google-auth-library) ☑️
-  - Sweet buttery Jesus another 139 packages.
+- **Save files to hard drive**: [file-saver](https://github.com/eligrey/FileSaver.js/)
 
 ### Not installed yet
 
+- **Authorization for Google Drive**: [Google's OAuth2 library](https://www.npmjs.com/package/google-auth-library) ☑️
 - **Raw XHTML editor**: Maybe just let it get edited as HTML and then convert to XHTML and back.
 - **Raw CSS editor**: Check the list at [Code Awesome](https://codeawesome.io/javascript/editors)
 - **File tree view**: Might end up rolling my own or making it out of Bootstrap / FA pieces.
